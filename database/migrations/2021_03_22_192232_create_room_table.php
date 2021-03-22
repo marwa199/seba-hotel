@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRoomsTable extends Migration
+class CreateRoomTable extends Migration
 {
     /**
      * Run the migrations.
@@ -19,6 +19,11 @@ class CreateRoomsTable extends Migration
             $table->unsignedBigInteger('rooms_nums');
             $table->unsignedBigInteger('max_num_hosts');
             $table->double('price', 8, 2);
+            $table->unsignedBigInteger('admin_id');
+            $table->foreign('admin_id')->references('id')->on('admins');
+
+            $table->unsignedBigInteger('type_id');
+            $table->foreign('type_id')->references('id')->on('rooms_type');
         });
     }
 
@@ -29,6 +34,6 @@ class CreateRoomsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rooms');
+        Schema::dropIfExists('room');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateReservationsTable extends Migration
+class CreateReservationTable extends Migration
 {
     /**
      * Run the migrations.
@@ -19,8 +19,13 @@ class CreateReservationsTable extends Migration
             $table->date('checkin_date');
             $table->date('checkout_date');
             $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
+        
             $table->unsignedBigInteger('receptionist_id');
+            $table->foreign('receptionist_id')->references('id')->on('receptionists');
+
             $table->unsignedBigInteger('room_id');
+            $table->foreign('room_id')->references('id')->on('rooms');
         });
     }
 
@@ -31,6 +36,6 @@ class CreateReservationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reservations');
+        Schema::dropIfExists('reservation');
     }
 }
