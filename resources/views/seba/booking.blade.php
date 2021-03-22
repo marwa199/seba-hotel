@@ -100,16 +100,16 @@
       @csrf
       <div class="form-group">
         <label for="formGroupExampleInput" class="input-label text-dark">check-in Date:</label>
-        <input type="date" class="form-control bg-transparent " id="formGroupExampleInput" name="check_in_date">
+        <input type="date" class="form-control bg-transparent " id="formGroupExampleInput" name="check_in_date" required>
       </div>
       <div class="form-group">
         <label for="formGroupExampleInput2" class="input-label text-dark">check-out Date:</label>
-        <input type="date" class="form-control bg-transparent " id="formGroupExampleInput2" name="check_in_date">
+        <input type="date" class="form-control bg-transparent " id="formGroupExampleInput2" name="check_out_date" required>
       </div>
       <div class="row">
         <div class="form-group col-3 text-center">
           <label for="Adults" class="input-label">Adults</label>
-          <select name="adults_num" id="adults" class="options p-1">
+          <select name="adults_num" id="adults" class="options p-1" required>
             <option value="0">0</option>
             <option value="0" selected="selected">1</option>
             <option value="0">2</option>
