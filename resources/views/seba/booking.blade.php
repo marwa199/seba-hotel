@@ -92,11 +92,11 @@
 
 <br><br>
 
-<div class=" d-flex flex-lg-row flex-sm-column m-5 p-5 justify-content-center">
+<div class="d-flex flex-lg-row flex-sm-column m-5 p-5 justify-content-center">
   <div class="d-inline-block p-5">
     <h3 class="d-inline-block">Your Reservation</h3>
     <br><br>
-    <form class="  d-inline-block mx-sm-auto pr-5 ">
+    <form class="d-inline-block mx-sm-auto pr-5">
       <div class="form-group">
         <label for="formGroupExampleInput" class="input-label text-dark">check-in Date:</label>
         <input type="date" class="form-control bg-transparent " id="formGroupExampleInput">
@@ -110,7 +110,7 @@
           <label for="Adults" class="input-label">Adults</label>
           <select name="" id="adults" class="options p-1">
             <option value="0">0</option>
-            <option value="0">1</option>
+            <option value="0" selected="selected">1</option>
             <option value="0">2</option>
             <option value="0">3</option>
             <option value="0">4</option>
