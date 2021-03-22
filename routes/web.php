@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,35 +18,30 @@ Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
-route::get('/','indexController@index');
+route::get('/', 'indexController@index');
 
-route::get('/about','indexController@about');
+route::get('/about', 'indexController@about');
 
-route::get('/rooms','indexController@rooms');
+route::get('/rooms', 'indexController@rooms');
 
-route::get('/booking','indexController@booking');
+route::get('/booking', 'indexController@booking');
 
-route::get('/cont','indexController@cont');
+route::get('/cont', 'indexController@cont');
 
-route::get('/receptionindex','receptionController@receptionindex');
+route::get('/receptionindex', 'receptionController@receptionindex');
 
-Route::resource('/room','sebacontroller');
-Route::resource('/receptionist','seba1controller');
-Route::get('/home', function()
-{
-return View::make('rooms.home');
+Route::resource('/room', 'sebacontroller');
+Route::resource('/receptionist', 'seba1controller');
+Route::get('/home', function () {
+    return View::make('rooms.home');
 });
 
-Route::resource('/reservation','reservationcontroller');
-route::resource('/users','userController');
-Route::get('home1', function()
-{
-return View::make('reservations.home');
+Route::resource('/reservation', 'reservationcontroller');
+route::resource('/users', 'userController');
+Route::get('home1', function () {
+    return View::make('reservations.home');
 });
 
 Route::get('login', function () {
     return view('login');
 });
-
-
-
