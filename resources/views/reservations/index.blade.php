@@ -14,7 +14,6 @@
             <th scope="col">Receptionist ID</th>
             <th scope="col">Room ID</th>
             <th scope="col">Action</th>
-
           </tr>
         </thead>
         <tbody>

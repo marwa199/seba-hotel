@@ -26,7 +26,7 @@
           <div class="collapse navbar-collapse bg-light " id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto" >
               <li class="nav-item ">
-                <a class="nav-link text-black-50 my-2 selected" href="index">HOME</a>
+                <a class="nav-link text-black-50 my-2 selected" href="/">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-dark my-2" href="about">ABOUT</a>
