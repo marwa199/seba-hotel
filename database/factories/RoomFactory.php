@@ -5,9 +5,9 @@
 use App\room;
 use Faker\Generator as Faker;
 
-$factory->define(room::class, function (Faker $faker) {
+$factory->define(Room::class, function (Faker $faker) {
     return [
-        'num_beds' => $faker->number_format,
+        'num_beds' => $faker->unique()->randomNumber,
         'rooms_nums' =>$faker->number_format,
         'max_num_hosts' =>$faker->sentence(1), // password
         'price' =>$faker->sentence(1),

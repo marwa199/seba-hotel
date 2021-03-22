@@ -26,6 +26,8 @@ route::get('/rooms', 'indexController@rooms');
 
 route::get('/booking', 'indexController@booking');
 
+route::post('avaliable_rooms', 'Rooms@find_avaliable');
+
 route::get('/cont', 'indexController@cont');
 
 route::get('/receptionindex', 'receptionController@receptionindex');
