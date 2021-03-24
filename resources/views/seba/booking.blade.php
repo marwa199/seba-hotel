@@ -96,19 +96,20 @@
   <div class="d-inline-block p-5">
     <h3 class="d-inline-block">Your Reservation</h3>
     <br><br>
-    <form class="d-inline-block mx-sm-auto pr-5">
+    <form class="d-inline-block mx-sm-auto pr-5" method="POST" action="avaliable_rooms">
+      @csrf
       <div class="form-group">
         <label for="formGroupExampleInput" class="input-label text-dark">check-in Date:</label>
-        <input type="date" class="form-control bg-transparent " id="formGroupExampleInput">
+        <input type="date" class="form-control bg-transparent " id="formGroupExampleInput" name="check_in_date" required>
       </div>
       <div class="form-group">
         <label for="formGroupExampleInput2" class="input-label text-dark">check-out Date:</label>
-        <input type="date" class="form-control bg-transparent " id="formGroupExampleInput2">
+        <input type="date" class="form-control bg-transparent " id="formGroupExampleInput2" name="check_out_date" required>
       </div>
       <div class="row">
         <div class="form-group col-3 text-center">
           <label for="Adults" class="input-label">Adults</label>
-          <select name="" id="adults" class="options p-1">
+          <select name="adults_num" id="adults" class="options p-1" required>
             <option value="0">0</option>
             <option value="0" selected="selected">1</option>
             <option value="0">2</option>
@@ -119,7 +120,7 @@
         </div>
         <div class="form-group col-3 text-center">
           <label for="children" class="input-label">children</label>
-          <select name="" id="children" class="options p-1">
+          <select name="childern_num" id="children" class="options p-1">
             <option value="0">0</option>
             <option value="0">1</option>
             <option value="0">2</option>

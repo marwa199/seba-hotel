@@ -18,14 +18,17 @@
         <nav class="navbar navbar-expand-md bg-light  fixed-top " >
           <a class="navbar-brand offset-2  align-content-center" style="font-size:35px;" href="home.html">SEBA</a>
 </nav>
+
+
 <div class="container">
 <div class="login-form">
 
-<a href="{{url('loginrec')}}" type="submit" class="btnn btn btn-danger w-25 btn-block">Log in as a receptionist</a>
+<a href="{{url('login')}}" type="submit" class="btnn btn btn-danger w-25 btn-block">Log in as an admin</a>
 
 
-    <form action="{{url('home1')}}" class="w-50 m-auto" method="GET">
-        <h2 class="text-center">Log in as admin</h2>       
+
+    <form action="{{url('home')}}" class="w-50 m-auto" method="GET">
+        <h2 class="text-center">Log in as receptionist</h2>       
         <div class="form-group">
             <input type="text" class="form-control" placeholder="Username" required="required">
         </div>
@@ -33,11 +36,11 @@
             <input type="password" class="form-control" placeholder="Password" required="required">
         </div>
         <div class="form-group">
-            <input type="submit" class="btnn  btn-block" value="log in">
+        <input type="submit" class="btnn  btn-block" value="log in">
         </div>
              
     </form>
-
+    
 </div>
 </div>
 </body>

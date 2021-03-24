@@ -15,7 +15,7 @@
 </head>
 <body>
 <center>
-<div class="container-fluid fixed-bottom mt-5 mr-0 row p-4 justify-content-center" id="footer2">@copyrights2021</div>
+<div class="fixed-bottom mt-5 mr-0 row p-1 justify-content-center" id="footer2">@copyrights2021</div>
             </center>
     </body>
 

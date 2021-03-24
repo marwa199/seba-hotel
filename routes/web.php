@@ -18,7 +18,11 @@ Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
-route::get('/', 'indexController@index');
+route::get('/', 'indexController@index');  //home page for users
+
+Route::get('login', function () {         //login page for admins
+    return view('login');
+});
 
 route::get('/about', 'indexController@about');
 
@@ -42,6 +46,21 @@ Route::get('home1', function () {
     return View::make('reservations.home');
 });
 
-Route::get('login', function () {
-    return view('login');
+
+Route::get('loginrec', function () {
+    return view('loginrec');
+});
+
+route::get('home1',function(){
+    return View::make('reservations.home');
+});
+
+route::get('home',function(){
+    return View::make('rooms.home');
+});
+
+route::post('/avaliable_rooms', 'Rooms@find_avaliable');
+
+route::post('/booked_successfully', function () {
+    return view('seba.succ_booking');
 });

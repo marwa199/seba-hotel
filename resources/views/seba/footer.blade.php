@@ -1,3 +1,5 @@
+
+
 <footer>
     <div class="container-fluid m-auto row justify-content-center" id="footer">
 
@@ -31,10 +33,10 @@
     </div>
 
     <a href="#demo"><span class="up text-light pl-4 pt-3">
-    <i class="fad fa-angle-double-up"></i>
+    <i class="fa fa-angle-double-up"></i>
     </span></a> 
     
-    <div class="container-fluid row py-4 justify-content-center" id="footer2">@copyrights2021</div>
+    <div class="row py-4 justify-content-center" id="footer2">@copyrights2021</div>
 
   </footer>
 

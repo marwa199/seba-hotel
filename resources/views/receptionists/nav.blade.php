@@ -32,6 +32,9 @@
                <li class="nav-item">
                  <a class="nav-link text-dark my-2 offset-1 selected" href="{{route('receptionist.index')}}">RECIPTIONISTS</a>
                </li>
+               <li class="nav-item">
+                 <a class="nav-link text-dark offset-5 font-weight-bolder btn btn-warning " href="{{url('login')}}">login page</a>
+               </li>
              </ul>
            </div>
            </nav>
