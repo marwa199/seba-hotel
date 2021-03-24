@@ -25,4 +25,5 @@ class indexController extends Controller
     function cont(){
         return view('seba.cont');
     }
+
 }
